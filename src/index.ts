@@ -13,6 +13,8 @@ dotenv.config();
 const app = express();
 const DB = process.env.MONGO_URL;
 
+app.use(express.json());
+
 app.use(
   cors({
     credentials: true,
