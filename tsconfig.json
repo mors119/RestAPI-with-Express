@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Node 런타임의 ESM 규칙을 그대로 따르겠다
+    "module": "NodeNext",
+    // NodeNext를 쓰면 moduleResolution은 생략하거나 "NodeNext"로
+    "moduleResolution": "NodeNext",
+
+    "baseUrl": "src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+
+    // ESM에서 DX 좋아지는 옵션들
+    "target": "ES2022", // Node 18+ 권장
+    "lib": ["ES2022"],
+
+    "strict": true,
+    "esModuleInterop": true, // CJS 호환 import 편의
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true // TS가 import/export를 임의 변환하지 않음
+  },
+  "include": ["src/**/*"]
+}
