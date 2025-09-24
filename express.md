@@ -74,3 +74,15 @@
 ### npm i mongoose
 
 현재 타입 설치는 불필요
+
+#### post test user
+
+{
+"email": "1@1.com",
+"password": "808",
+"username" : "여명"
+}
+
+#### npm i lodash
+
+#### npm i -D lodash
